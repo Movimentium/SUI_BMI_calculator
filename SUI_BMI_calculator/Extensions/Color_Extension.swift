@@ -3,7 +3,6 @@
 import UIKit
 import SwiftUI
 
-
 extension Color {
     
     struct card {
