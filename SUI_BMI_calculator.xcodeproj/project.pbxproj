@@ -13,6 +13,8 @@
 		0C0F1A7E2E9DB2D900A620CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C0F1A7D2E9DB2D900A620CD /* Preview Assets.xcassets */; };
 		0C0F1A852E9DB3EE00A620CD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0C0F1A842E9DB3EE00A620CD /* README.md */; };
 		0C0F1A872E9DB6D600A620CD /* Color_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0F1A862E9DB6D600A620CD /* Color_Extension.swift */; };
+		0C15696E2EA2CBD30004C71F /* MinimalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C15696D2EA2CBD30004C71F /* MinimalView.swift */; };
+		0C2A6E932EA42CDF00252713 /* ControllerOO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2A6E922EA42CDF00252713 /* ControllerOO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		0C0F1A7D2E9DB2D900A620CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0C0F1A842E9DB3EE00A620CD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0C0F1A862E9DB6D600A620CD /* Color_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color_Extension.swift; sourceTree = "<group>"; };
+		0C15696D2EA2CBD30004C71F /* MinimalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimalView.swift; sourceTree = "<group>"; };
+		0C2A6E922EA42CDF00252713 /* ControllerOO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerOO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			children = (
 				0C0F1A762E9DB2D700A620CD /* SUI_BMI_calculatorApp.swift */,
 				0C0F1A782E9DB2D700A620CD /* ContentView.swift */,
+				0C15696D2EA2CBD30004C71F /* MinimalView.swift */,
+				0C2A6E922EA42CDF00252713 /* ControllerOO.swift */,
 				0C0F1A7A2E9DB2D900A620CD /* Assets.xcassets */,
 				0C0F1A862E9DB6D600A620CD /* Color_Extension.swift */,
 				0C0F1A7C2E9DB2D900A620CD /* Preview Content */,
@@ -146,7 +152,9 @@
 			files = (
 				0C0F1A792E9DB2D700A620CD /* ContentView.swift in Sources */,
 				0C0F1A772E9DB2D700A620CD /* SUI_BMI_calculatorApp.swift in Sources */,
+				0C15696E2EA2CBD30004C71F /* MinimalView.swift in Sources */,
 				0C0F1A872E9DB6D600A620CD /* Color_Extension.swift in Sources */,
+				0C2A6E932EA42CDF00252713 /* ControllerOO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

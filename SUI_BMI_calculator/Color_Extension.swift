@@ -10,6 +10,8 @@ extension Color {
         static let bg = Color(red: 0.97, green: 0.95, blue: 0.98)
         static let blackShadow = Color.black.opacity(0.25)
     }
+         
+    static let accent = Color(red: 0.4, green: 0.31, blue: 0.64)
 }
 
 // MARK: - Legacy
