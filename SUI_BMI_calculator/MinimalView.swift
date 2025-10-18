@@ -44,12 +44,23 @@ struct MinimalView: View {
                     .padding(.vertical)
                 Text("\(oo.height.decimals(0)) cm")
                     .font(.system(size: 32, weight: .bold))
-                Slider(value: $oo.height, in: 60...240, step: 1.0)
+                Slider(value: $oo.height, in: oo.heightRange, step: 1.0)
                     .tint(Color.accent)
                     .padding()
                     
                 
-             }
+            }
+            .modifier(CardStyle())
+
+            VStack(alignment: .center, spacing: 0) {
+                Text("BMI").font(.system(size: 22, weight: .semibold))
+                    .padding(.vertical)
+                 Text(oo.bmi.decimals(2))
+                    .font(.system(size: 32, weight: .bold))
+                    .padding(.top, 20)
+                Text(oo.bmiCategory.str).font(.system(size: 22, weight: .semibold))
+                    .padding(.bottom, 40)
+            }
             .modifier(CardStyle())
                         
             
