@@ -19,23 +19,23 @@ struct ContentView: View {
                     } label: {
                         Image(systemName: "minus")
                     }
-                    .modifier(CircularButtonStyle(bgColor: .accent))
+                    .modifier(StyleCircularButton(bgColor: .accent))
                     .padding()
-
+  
                     Text("\(oo.weight.decimals(1)) kg")
                         .font(.system(size: 32, weight: .bold))
                         .frame(maxWidth: .infinity)
-                    
+                     
                     Button {
                         oo.onBtnPlus()
                     } label: {
                         Image(systemName: "plus")
                     }
-                    .modifier(CircularButtonStyle(bgColor: .accent))
+                    .modifier(StyleCircularButton(bgColor: .accent))
                     .padding()
                 }
             }
-            .modifier(CardStyle())
+            .modifier(StyleCard())
 
             VStack(alignment: .center, spacing: 0) {
                 Text("Height").font(.system(size: 22, weight: .semibold))
@@ -48,7 +48,7 @@ struct ContentView: View {
                     
                 
             }
-            .modifier(CardStyle())
+            .modifier(StyleCard())
 
             VStack(alignment: .center, spacing: 0) {
                 Text("BMI").font(.system(size: 22, weight: .semibold))
@@ -59,7 +59,7 @@ struct ContentView: View {
                 Text(oo.bmiCategory.str).font(.system(size: 22, weight: .semibold))
                     .padding(.bottom, 40)
             }
-            .modifier(CardStyle())
+            .modifier(StyleCard())
                         
             
             Spacer()

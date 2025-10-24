@@ -26,29 +26,3 @@ import Foundation
     }
         
 }
-
-enum BMICategory {
-    case underweight
-    case normalWeight
-    case overweight
-    case obesity
-    case extremeObesity
-    
-    init(withBMI bmi: Double) {
-        if bmi < 18.5 { self = .underweight;   return }
-        if bmi < 25   { self = .normalWeight;  return }
-        if bmi < 30   { self = .overweight;    return }
-        if bmi < 40   { self = .obesity;       return }
-        self = .extremeObesity
-    }
-    
-    var str: String {
-        switch self {
-        case .underweight:    "underweight"
-        case .normalWeight:   "normal weight"
-        case .overweight:     "overweight"
-        case .obesity:        "obesity"
-        case .extremeObesity: "extreme obesity"
-        }
-    }
-}

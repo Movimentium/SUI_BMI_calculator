@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C0E97A72EAB9A3F00732903 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0E97A62EAB9A3F00732903 /* Model.swift */; };
 		0C0F1A772E9DB2D700A620CD /* SUI_BMI_calculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0F1A762E9DB2D700A620CD /* SUI_BMI_calculatorApp.swift */; };
 		0C0F1A792E9DB2D700A620CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0F1A782E9DB2D700A620CD /* ContentView.swift */; };
 		0C0F1A7B2E9DB2D900A620CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C0F1A7A2E9DB2D900A620CD /* Assets.xcassets */; };
@@ -15,11 +16,12 @@
 		0C0F1A872E9DB6D600A620CD /* Color_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0F1A862E9DB6D600A620CD /* Color_Extension.swift */; };
 		0C2A6E932EA42CDF00252713 /* ControllerOO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2A6E922EA42CDF00252713 /* ControllerOO.swift */; };
 		0C2A6E952EA444D700252713 /* Double_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2A6E942EA444D700252713 /* Double_Extension.swift */; };
-		0C2A6E992EA4456E00252713 /* CircularButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2A6E982EA4456E00252713 /* CircularButtonStyle.swift */; };
-		0C2A6E9B2EA445CC00252713 /* CardStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2A6E9A2EA445CC00252713 /* CardStyle.swift */; };
+		0C2A6E992EA4456E00252713 /* StyleCircularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2A6E982EA4456E00252713 /* StyleCircularButton.swift */; };
+		0C2A6E9B2EA445CC00252713 /* StyleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2A6E9A2EA445CC00252713 /* StyleCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C0E97A62EAB9A3F00732903 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		0C0F1A732E9DB2D700A620CD /* SUI_BMI_calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SUI_BMI_calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C0F1A762E9DB2D700A620CD /* SUI_BMI_calculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUI_BMI_calculatorApp.swift; sourceTree = "<group>"; };
 		0C0F1A782E9DB2D700A620CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -29,8 +31,8 @@
 		0C0F1A862E9DB6D600A620CD /* Color_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color_Extension.swift; sourceTree = "<group>"; };
 		0C2A6E922EA42CDF00252713 /* ControllerOO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerOO.swift; sourceTree = "<group>"; };
 		0C2A6E942EA444D700252713 /* Double_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double_Extension.swift; sourceTree = "<group>"; };
-		0C2A6E982EA4456E00252713 /* CircularButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularButtonStyle.swift; sourceTree = "<group>"; };
-		0C2A6E9A2EA445CC00252713 /* CardStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStyle.swift; sourceTree = "<group>"; };
+		0C2A6E982EA4456E00252713 /* StyleCircularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleCircularButton.swift; sourceTree = "<group>"; };
+		0C2A6E9A2EA445CC00252713 /* StyleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				0C0F1A762E9DB2D700A620CD /* SUI_BMI_calculatorApp.swift */,
 				0C0F1A782E9DB2D700A620CD /* ContentView.swift */,
 				0C2A6E922EA42CDF00252713 /* ControllerOO.swift */,
+				0C0E97A62EAB9A3F00732903 /* Model.swift */,
 				0C2A6E972EA4454000252713 /* Styles */,
 				0C2A6E962EA4452400252713 /* Extensions */,
 				0C0F1A7A2E9DB2D900A620CD /* Assets.xcassets */,
@@ -95,8 +98,8 @@
 		0C2A6E972EA4454000252713 /* Styles */ = {
 			isa = PBXGroup;
 			children = (
-				0C2A6E982EA4456E00252713 /* CircularButtonStyle.swift */,
-				0C2A6E9A2EA445CC00252713 /* CardStyle.swift */,
+				0C2A6E982EA4456E00252713 /* StyleCircularButton.swift */,
+				0C2A6E9A2EA445CC00252713 /* StyleCard.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -173,12 +176,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C0F1A792E9DB2D700A620CD /* ContentView.swift in Sources */,
-				0C2A6E992EA4456E00252713 /* CircularButtonStyle.swift in Sources */,
+				0C2A6E992EA4456E00252713 /* StyleCircularButton.swift in Sources */,
 				0C0F1A772E9DB2D700A620CD /* SUI_BMI_calculatorApp.swift in Sources */,
 				0C2A6E952EA444D700252713 /* Double_Extension.swift in Sources */,
-				0C2A6E9B2EA445CC00252713 /* CardStyle.swift in Sources */,
+				0C2A6E9B2EA445CC00252713 /* StyleCard.swift in Sources */,
 				0C0F1A872E9DB6D600A620CD /* Color_Extension.swift in Sources */,
 				0C2A6E932EA42CDF00252713 /* ControllerOO.swift in Sources */,
+				0C0E97A72EAB9A3F00732903 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

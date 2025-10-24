@@ -1,9 +1,9 @@
-//  CircularButtonStyle.swift
+//  StyleCircularButton.swift
 //  SUI_BMI_calculator
 //  Created by Miguel Gallego on 19/10/25.
 import SwiftUI
 
-struct CircularButtonStyle: ViewModifier {
+struct StyleCircularButton: ViewModifier {
     var size: CGFloat = 52
     var bgColor: Color = .blue
     var fgColor: Color = .white
@@ -24,7 +24,7 @@ extension View {
                              bgColor: Color = .blue,
                              fgColor: Color = .white) -> some View
     {
-        modifier(CircularButtonStyle(size: size,
+        modifier(StyleCircularButton(size: size,
                                      bgColor: bgColor,
                                      fgColor: fgColor))
     }
