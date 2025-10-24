@@ -1,9 +1,7 @@
 //  Model.swift
 //  SUI_BMI_calculator
 //  Created by Miguel Gallego on 24/10/25.
-
-import Foundation
-
+import SwiftUI
 
 enum BMICategory {
     case underweight
@@ -27,6 +25,16 @@ enum BMICategory {
         case .overweight:     "overweight"
         case .obesity:        "obesity"
         case .extremeObesity: "extreme obesity"
+        }
+    }
+    
+    var color: Color {
+        switch self {
+        case .underweight:    Color(hex: 0x21A0E2)
+        case .normalWeight:   Color(hex: 0x009688)
+        case .overweight:     Color(hex: 0xC39313)
+        case .obesity:        Color(hex: 0xFF5722)
+        case .extremeObesity: Color(hex: 0xE91E63)
         }
     }
 }
