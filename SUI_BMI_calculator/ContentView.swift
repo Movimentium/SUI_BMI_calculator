@@ -57,6 +57,7 @@ struct ContentView: View {
                     .font(.system(size: 32, weight: .bold))
                     .padding(.top, 20)
                 Text(oo.bmiCategory.str).font(.system(size: 22, weight: .semibold))
+                    .foregroundStyle(oo.bmiCategory.color)
                     .padding(.bottom, 40)
             }
             .styleCard()
