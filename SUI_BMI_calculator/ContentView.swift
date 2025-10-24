@@ -6,9 +6,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var oo = ControllerOO()
     
-    
     var body: some View {
-        
         VStack(alignment: .center, spacing: 20) {
             
             VStack(alignment: .center, spacing: 0) {
