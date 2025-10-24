@@ -18,9 +18,8 @@ struct StyleCircularButton: ViewModifier {
     }
 }
 
-// I don't like this
 extension View {
-    func circularButtonStyle(size: CGFloat = 52,
+    func styleCircularButton(size: CGFloat = 52,
                              bgColor: Color = .blue,
                              fgColor: Color = .white) -> some View
     {

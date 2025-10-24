@@ -15,3 +15,9 @@ struct StyleCard: ViewModifier {
             .shadow(color: .gray(0.75), radius: 5, x: 0, y: 2)
     }
 }
+
+extension View {
+    func styleCard(radious: Int = 18, bgColor: Color = .card.bg) -> some View {
+        modifier(StyleCard(radius: radious, bgColor: bgColor))
+    }
+}
