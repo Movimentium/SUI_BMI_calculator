@@ -3,6 +3,7 @@
 import UIKit
 import SwiftUI
 
+// Apps Colors
 extension Color {
     
     struct card {
@@ -12,33 +13,61 @@ extension Color {
          
     static let accent = Color(red: 0.4, green: 0.31, blue: 0.64)
     
+}
+
+extension Color {
+    
     static func gray(_ scale: Double = 0.5) -> Color {
         return Color(red: scale, green: scale, blue: scale)
     }
-}
-
-// MARK: - Legacy
-extension UIColor {
     
+    //  Solid Color with rgb components from 0 to 255
     //  Usage:
-    //  let color = UIColor(red: 0xFF, green: 0xFF, blue: 0xFF)
-    convenience init(red: Int, green: Int, blue: Int) {
-        assert(red >= 0   && red <= 255, "Invalid red component")
-        assert(green >= 0 && green <= 255, "Invalid green component")
-        assert(blue >= 0  && blue <= 255, "Invalid blue component")
+    //  let color = Color(r: 0xFF, g: 0xFF, b: 0xFF)
+    init(r: Int, g: Int, b: Int) {
+        assert(r >= 0 && r <= 255, "Invalid red component")
+        assert(g >= 0 && g <= 255, "Invalid green component")
+        assert(b >= 0 && b <= 255, "Invalid blue component")
         
-        self.init(red: CGFloat(red) / 255.0,
-                  green: CGFloat(green) / 255.0,
-                  blue: CGFloat(blue) / 255.0, alpha: 1.0)
+        self.init(red: CGFloat(r) / 255.0,
+                  green: CGFloat(g) / 255.0,
+                  blue: CGFloat(b) / 255.0, opacity: 1.0)
     }
     
     //  Usage:
     //  let color2 = UIColor(rgb: 0xFFFFFF)
-    convenience init(rgb: Int) {
+    init(hex: Int) {
         self.init(
-            red: (rgb >> 16) & 0xFF,
-            green: (rgb >> 8) & 0xFF,
-            blue: rgb & 0xFF
+            r: (hex >> 16) & 0xFF,
+            g: (hex >> 8) & 0xFF,
+            b: hex & 0xFF
+        )
+    }
+}
+
+
+// MARK: - Legacy
+extension UIColor {
+    //  Solid Color with rgb components from 0 to 255
+    //  Usage:
+    //  let color = UIColor(r: 0xFF, g: 0xFF, b: 0xFF)
+    convenience init(r: Int, g: Int, b: Int) {
+        assert(r >= 0 && r <= 255, "Invalid red component")
+        assert(g >= 0 && g <= 255, "Invalid green component")
+        assert(b >= 0 && b <= 255, "Invalid blue component")
+        
+        self.init(red: CGFloat(r) / 255.0,
+                  green: CGFloat(g) / 255.0,
+                  blue: CGFloat(b) / 255.0, alpha: 1.0)
+    }
+    
+    //  Usage:
+    //  let color2 = UIColor(hex: 0xFFFFFF)
+    convenience init(hex: Int) {
+        self.init(
+            r: (hex >> 16) & 0xFF,
+            g: (hex >> 8) & 0xFF,
+            b: hex & 0xFF
         )
     }
     
